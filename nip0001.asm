@@ -1,0 +1,9 @@
+       
+       
+MOV AH, 02H ; SERV COLOCAR EL CURSO EN UNA POSICION
+MOV BH, 0 ; Página ACTUAL
+MOV DH, 12 ; Fila
+MOV DL, 40 ; = Columna
+INT 10H
+
+SALUDO DB 'BIENVEIDO$'
